@@ -1,0 +1,114 @@
+.app-container{
+  text-align: center;
+  border-radius: 5px;
+  min-width: 300px;
+  width: 20%;
+  border: 1px green solid;
+  margin: 50px auto;
+  padding: 20px;
+}
+hr {
+  width: 90%;
+}
+
+.m-0{
+  margin: 0px;
+}
+
+.app-note{
+  text-align: left;
+  background: #47bc9b;
+  color: white;
+  width: 90%;
+  border-radius: 20px;
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in-out 0.2s
+}
+.app-note:hover,
+.app-note:active{
+  background: orange;
+}
+
+.app-note:hover .sticky-btn{
+  display: block;
+  transform: skewX(-10deg);
+  animation: left-to-right ease-in-out .2s
+  
+}
+.app-note:active .sticky-btn{
+  display: block;
+  transform: skewX(-10deg);
+  animation: left-to-right ease-in-out .2s
+  
+}
+
+
+.note-content{
+  padding: 0px 20px;
+}
+
+.app-delete-btn{
+  background: red;
+}
+
+.sticky-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: .8rem;
+  display: none;
+}
+
+.sticky-btn:hover {
+  background: #fa4a4a;
+}
+@keyframes left-to-right{
+  0%{
+    right: 50%;
+    opacity: 0.5;
+  }
+  60%{
+    right: -20%;
+    opacity: 0.5;
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}
+
+
+/* form */
+.form-add-note input{
+  height: 30px;
+  border-radius: 20px;
+  border: 1px green solid;
+  padding-left: 10px;
+  width: 90%;
+}
+.form-add-note button{
+  height: 30px;
+  border-radius: 20px;
+  width: 30%;
+  background: orange;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.form-add-note button:hover{
+  background: #d18700;
+}
+
+.form-add-note button:active{
+  background: #d18700;
+}
